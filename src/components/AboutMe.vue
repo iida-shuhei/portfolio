@@ -20,7 +20,7 @@
     font-family: 'Bradley Hand',sans-serif;
     font-size: 80px;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 50px;
   }
   .text {
     text-align: center;

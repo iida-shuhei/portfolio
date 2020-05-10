@@ -206,18 +206,16 @@ export default {
     font-family: 'Bradley Hand',sans-serif;
     font-size: 80px;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 50px;
   }
   .text {
     text-align: center;
     margin-bottom: 20px;
   }
   .work {
-    margin-bottom: 200px;
-    background-image: url("/back.jpeg");
-    background-size: cover;
+    margin-bottom: 100px;
   }
   .bottom {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 </style>

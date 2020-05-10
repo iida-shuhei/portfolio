@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-img :src="top" height="700px" />
+    <v-img :src="top" height="680px" />
   </div>
 </template>
 

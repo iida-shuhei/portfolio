@@ -3,10 +3,9 @@
             <v-container class="bottom">
                   <h1>Contact</h1>
                     <div class="text">
-                      最後までご覧いただきありがとうございました。このサイトを通して、私のことを少しでも知っていただけたら
-                      嬉しいです。もしこのサイトや私について何かコメントがありましたら、下記フォームをご利用ください。
+                      最後までご覧いただきありがとうございました。もしこのサイトや私について何かコメントがありましたら、下記フォームをご利用ください。
                     </div>
-                    <v-form ref="form" v-model="contactFormValidation.valid" lazy-validation>
+                    <v-form ref="form" class="form" v-model="contactFormValidation.valid" lazy-validation>
                     <v-text-field
                             v-model="contactForm.name"
                             :rules="contactFormValidation.nameRules"
@@ -35,18 +34,17 @@
                             class="mt-4 font-weight-bold"
                     >送信
                     </v-btn>
-                </v-form>
-            </v-container>
         <v-snackbar
                 v-model="snackBar.show"
                 :color="snackBar.color"
-                bottom
-                right
-                :timeout="6000"
+                :timeout="3000"
+                top
                 class="font-weight-bold"
         >
             {{snackBar.message}}
         </v-snackbar>
+                </v-form>
+            </v-container>
     </div>
 </template>
 
@@ -84,13 +82,13 @@
               this.formReset()
               this.showSnackBar(
                 'success',
-                'お問い合わせありがとうございます。送信完了しました'
+                'お問い合わせありがとうございます。送信完了しました。'
               )
             })
             .catch(err => {
               this.showSnackBar(
                 'error',
-                '送信に失敗しました。時間をおいて再度お試しください'
+                '送信に失敗しました。時間をおいて再度お試しください。'
               )
               console.log(err)
             })
@@ -112,28 +110,22 @@
 </script>
 
 <style scoped>
-  .contact {
-    margin-top: 200px;
-    background-image: url("/back.jpeg");
-    background-size: cover;
-  }
   h1 {
     font-family: 'Bradley Hand',sans-serif;
     font-size: 80px;
     text-align: center;
-    margin-top: 200px;
   }
   .text {
     text-align: center;
-    width: 800px;
+    width: 600px;
     margin: 0 auto;
     line-height: 40px;
   }
   .form {
     margin: 0 auto;
-    width: 800px;
+    width: 600px;
   }
   .bottom {
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
 </style>

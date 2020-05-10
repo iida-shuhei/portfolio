@@ -4,7 +4,7 @@
     <div class="text">
       私の人生を振り返ってましょう。
     </div>
-  <v-timeline :dense="$vuetify.breakpoint.smAndDown">
+  <v-timeline class="time" :dense="$vuetify.breakpoint.smAndDown">
     <v-timeline-item
       color="purple lighten-2"
       fill-dot
@@ -215,6 +215,9 @@ export default {
   }
   .text {
     text-align: center;
+    margin-bottom: 50px;
+  }
+  .time {
     margin-bottom: 50px;
   }
 </style>

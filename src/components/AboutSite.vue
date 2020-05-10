@@ -17,16 +17,12 @@
     font-family: 'Bradley Hand',sans-serif;
     font-size: 80px;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .text {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     line-height: 40px;
-  }
-  .about {
-    background-image: url("/back.jpeg");
-    background-size: cover;
   }
 </style>

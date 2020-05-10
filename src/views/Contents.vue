@@ -1,14 +1,14 @@
 <template>
   <div>
-    <ImageTop/>
+    <Contents/>
   </div>
 </template>
 
 <script>
-import ImageTop from '@/components/ImageTop'
+import Contents from '@/components/Contents'
 export default {
   components: {
-    ImageTop
+    Contents,
   }
 }
 </script>
