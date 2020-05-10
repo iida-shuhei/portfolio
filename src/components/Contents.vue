@@ -4,7 +4,7 @@
   <div class="text">
     試行錯誤を繰り返しながら創り上げた作品達…
   </div>
-  <v-container>
+  <v-container class="bottom">
     <v-row>
       <v-dialog v-model="dialog3">
         <template v-slot:activator="{ on }">
@@ -206,13 +206,18 @@ export default {
     font-family: 'Bradley Hand',sans-serif;
     font-size: 80px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 200px;
   }
   .text {
     text-align: center;
     margin-bottom: 20px;
   }
   .work {
+    margin-bottom: 200px;
+    background-image: url("/back.jpeg");
+    background-size: cover;
+  }
+  .bottom {
     margin-bottom: 200px;
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="contact">
-            <v-container>
+            <v-container class="bottom">
                   <h1>Contact</h1>
                     <div class="text">
                       最後までご覧いただきありがとうございました。このサイトを通して、私のことを少しでも知っていただけたら
@@ -113,14 +113,15 @@
 
 <style scoped>
   .contact {
-    margin-bottom: 200px;
     margin-top: 200px;
+    background-image: url("/back.jpeg");
+    background-size: cover;
   }
   h1 {
     font-family: 'Bradley Hand',sans-serif;
     font-size: 80px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 200px;
   }
   .text {
     text-align: center;
@@ -131,6 +132,8 @@
   .form {
     margin: 0 auto;
     width: 800px;
-    
+  }
+  .bottom {
+    margin-bottom: 200px;
   }
 </style>

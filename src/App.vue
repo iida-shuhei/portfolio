@@ -38,5 +38,5 @@ export default {
  .header {
     position: sticky;
     top: 0;
-}
+  }
 </style>

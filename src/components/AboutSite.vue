@@ -25,4 +25,8 @@
     margin-bottom: 200px;
     line-height: 40px;
   }
+  .about {
+    background-image: url("/back.jpeg");
+    background-size: cover;
+  }
 </style>
