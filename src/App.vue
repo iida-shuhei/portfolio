@@ -2,11 +2,11 @@
   <v-app>
     <Header class="header"/>
     <ImageTop/>
-    <AboutSite/>
+    <AboutSite ref="about-site"/>
     <AboutMe/>
-    <Contents/>
+    <Contents ref="works"/>
     <Myself/>
-    <Contact/>
+    <Contact ref="contact"/>
     <Footer/>
   </v-app>
 </template>
@@ -31,6 +31,24 @@ export default {
     Footer,
     Contact
   },
+  mounted() {
+    this.scrollPage();
+  },
+  watch: {
+    '$route' () {
+      this.scrollPage();
+    }
+  },
+  methods:{
+    scrollPage(){
+      const hash = this.$route.hash;
+      if (hash) {
+        this.$vuetify.goTo(this.$refs[hash.replace('#',"")]);
+      } else if (hash === "") {
+        this.$vuetify.goTo(0);
+      }
+    }
+  }
 }
 </script>
 

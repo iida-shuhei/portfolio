@@ -8,23 +8,31 @@
           <v-tabs right>
                 
             <v-tab>
-              <v-icon>mdi-home</v-icon>
-              トップ
+              <router-link to="/">
+                <v-icon>mdi-home</v-icon>
+                トップ
+              </router-link>
             </v-tab>
 
             <v-tab>
-              <v-icon>mdi-card-account-details-outline</v-icon>
-              このサイトについて
+              <router-link to="#about-site">
+                <v-icon>mdi-card-account-details-outline</v-icon>
+                このサイトについて
+              </router-link>
             </v-tab>
 
             <v-tab>
-              <v-icon>mdi-folder-search-outline</v-icon>
-              ポートフォリオ
+              <router-link to="#works">
+                <v-icon>mdi-folder-search-outline</v-icon>
+                ポートフォリオ
+              </router-link>
             </v-tab>
 
             <v-tab>
-              <v-icon>mdi-account</v-icon>
-              連絡先
+              <router-link to="#contact">
+                <v-icon>mdi-account</v-icon>
+                連絡先
+              </router-link>
             </v-tab>
 
           </v-tabs>
